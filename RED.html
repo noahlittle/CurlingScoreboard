@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS Stream - Team Kleiter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="rounds-container">
+        <div class="rounds-numbers">
+            <div></div>
+            <div class="round">1st</div>
+            <div class="round">2nd</div>
+            <div class="round">3rd</div>
+            <div class="round">4th</div>
+            <div class="round">5th</div>
+            <div class="round">6th</div>
+            <div class="round">7th</div>
+            <div class="round">8th</div>
+            <div class="round">9th</div>
+            <div class="round">10th</div>
+            <div class="round">EXTRA</div>
+            <!-- <div class="round">EXTRA</div> -->
+            <div class="round">Total</div>
+        </div>
+        <div class="team-one-rounds">
+            <div class="teamOneName"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <!-- <div class="round-score"></div> -->
+            <div class="total-score"></div>
+        </div>
+        <div class="team-two-rounds">
+            <div class="teamTwoName"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <div class="round-score"></div>
+            <!-- <div class="round-score"></div> -->
+            <div class="total-score"></div>
+        </div>
+
+
+    </div>
+    <div class="game-container">
+        <div id="top-bar">
+            <div id="event-name"></div>
+            <div id="arrow">▶</div>
+            <div id="pool"></div>
+            <div id="game"></div>
+        </div>
+        <div class="teams">
+            <div id="team-one" class="team">
+                <img class="logo-away" src="images/ON.png">
+                <div class="name teamOneName"></div>
+                <div class="mark-container">
+                    <div class="mark"></div>
+                </div>
+                <div class="score teamOneScore"></div>
+            </div>
+            <div id="team-two" class="team">
+                <img class="logo-away" src="images/SK.png">
+                <div class="name teamTwoName"></div>
+                <div class="mark-container">
+                    <div class="mark"></div>
+                </div>
+                <div class="score teamTwoScore"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="teams-container">
+            <div id="team1" class="teams">
+                <div id="teamOneColor" class="teamColor"><img src="images/ON.png" class="logo-away-teams"></div>
+                <div id="teamOneName" class="teamName teamOneName"></div>
+                <div id="teamOneTurn" class="teamTurn"></div>
+                <div id="teamOneScore" class="teamScore teamOneScore"></div>
+                <div class="teamPoints">
+                    <div class="teamOnePoint"></div>
+                    <div class="teamOnePoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamOnePoint"></div>
+                    <div class="teamOnePoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamOnePoint"></div>
+                    <div class="teamOnePoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamOnePoint"></div>
+                    <div class="teamOnePoint"></div>
+                </div>
+            </div>
+            <div id="team2" class="teams">
+                <div id="teamTwoColor" class="teamColor"><img src="images/SK.png" class="logo-away-teams"></div>
+                <div id="teamTwoName" class="teamName teamTwoName"></div>
+                <div id="teamTwoTurn" class="teamTurn"></div>
+                <div id="teamTwoScore" class="teamScore teamTwoScore"></div>
+                <div class="teamPoints">
+                    <div class="teamTwoPoint"></div>
+                    <div class="teamTwoPoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamTwoPoint"></div>
+                    <div class="teamTwoPoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamTwoPoint"></div>
+                    <div class="teamTwoPoint"></div>
+                </div>
+                <div class="teamPoints">
+                    <div class="teamTwoPoint"></div>
+                    <div class="teamTwoPoint"></div>
+                </div>
+            </div>
+        </div>
+        <div class="round-contaniner" id="roundContainer"></div>
+    </div>
+    <div class="game-controller">
+        <div id="team-one-controller">
+            <h2>Team One</h2>
+            <div>
+                <label for="team-one-color-controller">Team Color: </label>
+                <input type="text" id="team-one-color-controller">
+            </div>
+            <div>
+                <label for="team-one-flag-controller">Flag Color: </label>
+                <input type="text" id="team-one-flag-controller">
+            </div>
+            <div>
+                <label for="team-one-name-controller">Team Name: </label>
+                <input type="text" id="team-one-name-controller">
+            </div>
+            <div>
+                <label for="team-one-score-controller">Team Score: </label>
+                <input type="text" id="team-one-score-controller">
+            </div>
+            <div class="scores">
+                <label for="scores">Team Scores: </label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+        </div>
+
+        <div id="team-two-controller">
+            <h2>Team Two</h2>
+            <div>
+                <label for="team-two-color-controller">Team Color: </label>
+                <input type="text" id="team-two-color-controller">
+            </div>
+            <div>
+                <label for="team-two-flag-controller">Flag Color: </label>
+                <input type="text" id="team-two-flag-controller">
+            </div>
+            <div>
+                <label for="team-two-name-controller">Team Name: </label>
+                <input type="text" id="team-two-name-controller">
+            </div>
+            <div>
+                <label for="team-two-score-controller">Team Score: </label>
+                <input type="text" id="team-two-score-controller">
+            </div>
+            <div class="scores">
+                <label for="scores">Team Scores: </label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div id="top-bar-controller">
+            <h2>Game Details</h2>
+            <div>
+                <label for="event-name-controller">Event Name: </label>
+                <input type="text" id="event-name-controller">
+            </div>
+            <div>
+                <label for="pool-controller">Pool: </label>
+                <input type="text" id="pool-controller">
+            </div>
+            <div>
+                <label for="game-controller">Game: </label>
+                <input type="text" id="game-controller">
+            </div>
+            <div class="hummer-container">
+                <label for="hummer">Hammer to: </label>
+                <input type="radio" name="hammer" id="teamOneHummer">
+                <label for="teamOne">Top</label>
+                <input type="radio" name="hammer" id="teamTwoHummer">
+                <label for="teamTwo">Bottom</label>
+            </div>
+            <div>
+                <label for="roundContainerInput">Round: </label>
+                <input type="text" name="roundContainerInput" id="roundContainerInput">
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

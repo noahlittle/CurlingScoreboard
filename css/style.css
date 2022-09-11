@@ -1,0 +1,431 @@
+body {
+  background-color: #eee;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #00ff00;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+
+/*****************************CHANGE FOR SHORT NAMED TEAMS********************/
+
+
+.teamNameBig {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 32.5px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  width: 200px;
+}
+
+
+
+
+/*****************************First ScoreBoard********************/
+
+.game-container {
+  display: grid;
+  height: 150px;
+  max-width: 90%;
+  grid-template-rows: 50px auto;
+  margin: 20px auto;
+
+}
+
+#top-bar {
+  display: flex;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 50px;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#event-name {
+  flex-basis: 55%;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+#arrow {
+  flex-basis: 5%;
+  font-weight: bold;
+}
+
+#pool,
+#game {
+  flex-basis: 20%;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#pool {
+  text-align: left;
+}
+
+#game {
+  text-align: right;
+}
+
+.logo {
+  max-width: 50px;
+  padding-top: 10px;
+  flex-basis: 15%;
+}
+
+.logo-away {
+  max-width: 75px;
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
+  flex-basis: 15%;
+}
+
+.logo-teams {
+  max-width: 30px;
+  padding-top: 3px;
+  flex-basis: 15%;
+}
+
+.logo-away-teams {
+  max-width: 50px;
+  padding-top: 5px;
+  flex-basis: 15%;
+}
+
+.teams {
+  display: flex;
+  background-color: #444444;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#team-one {
+  flex-flow: row;
+}
+
+#team-two {
+  flex-flow: row-reverse;
+}
+
+#team-one,
+#team-two {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.flag,
+.mark-container,
+.score {
+  flex-basis: 15%;
+  height: 70%;
+  border-radius: 25px
+}
+
+.name {
+  flex-basis: 70%;
+  height: 70%;
+  padding: 0 10px;
+  line-height: 70px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.flag,
+.score {
+  height: 70%;
+  background-color: #222;
+  flex-basis: 15%;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.mark-container {
+  display: flex;
+}
+
+.mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  margin: auto;
+}
+
+#team-one .mark {
+  background-color: #da0037;
+}
+
+#team-two .mark {
+  background-color: #ffd523;
+}
+
+.game-controller {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  box-shadow: 10px 5px 5px #ddd;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px
+}
+
+.game-controller h2 {
+  padding: 20px 0;
+}
+
+.game-controller input {
+  border: 1px solid #ddd;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+#team-one-controller .scores input,
+#team-two-controller .scores input {
+  width: 10%;
+}
+
+#top-bar-controller,
+#team-one-controller,
+#team-two-controller {
+  width: 33%;
+}
+
+.logo {
+  max-width: 35px;
+}
+
+.logo-away {
+  max-width: 100px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 750px;
+  text-align: center;
+  margin: auto;
+}
+
+.teams-container {
+  border: 2px solid #ddd;
+  background-color: #444444;
+}
+
+#team1 {
+  border-bottom: 1px solid #ddd;
+  height: 50%;
+}
+#team2 {
+  height: 50%;
+}
+
+.teams-container {
+  width: 100%;
+  height: 150px;
+  padding: 0 20px;
+  border-radius: 25px 25px 25px 0px;
+}
+
+.round-contaniner {
+  width: 25%;
+  border-radius: 0px 0px 15px 15px;
+  height: 60px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #191a19;
+  line-height: 62px;
+  text-align: center;
+  color: #eee;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamColor,
+.teamTurn,
+.teamScore,
+.teamPoints,
+.teamsScore {
+  width: 65px;
+  height: 50%;
+}
+
+
+.teamTurn {
+  width: 40px;
+}
+
+.teamName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 32.5px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 235px;
+}
+
+
+
+.teamPoints {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamPoints div {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #222;
+  color: transparent;
+}
+.teamOnePoint:hover {
+  background-color: #fc454269;
+}
+
+.teamTwoPoint:hover {
+  background-color: #fee54081;
+}
+
+.teamScore {
+  color: #eee;
+  background-color: #222;
+  line-height: 37.5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#scoreboard-controller {
+  margin-top: 50px;
+  width: 650px;
+  background-color: #fff;
+}
+
+#scoreboard-controller div input[type="text"] {
+  border: 2px solid #ddd;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+#scoreboard-controller div label {
+  font-size: 1.2rem;
+}
+
+.rounds-container {
+  max-width: 99%;
+  margin: auto;
+  background-color: #00ff00;
+  display: grid;
+  height: 100px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rounds-numbers,
+.team-one-rounds,
+.team-two-rounds {
+  display: flex;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.rounds-numbers div,
+.team-one-rounds div,
+.team-two-rounds div {
+  flex-basis: 8%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.rounds-numbers div:last-of-type,
+.team-one-rounds div:last-of-type,
+.team-two-rounds div:last-of-type {
+  flex-basis: 8%;
+  margin-left: 4%;
+}
+
+.rounds-numbers div {
+  background-color: #444444;
+  border: 1px solid #00FF00;
+  color: #eee;
+}
+
+.team-one-rounds div:first-of-type,
+.team-two-rounds div:first-of-type {
+  background-color: #444444;
+  border: 1px solid #00FF00;
+  color: #eee;
+  flex-basis: 15%;
+  font-size: 1.3rem;
+}
+
+
+.rounds-numbers div:first-of-type {
+
+background-color: #00ff00;
+flex-basis: 15%;
+
+}
+
+
+
+.team-one-rounds div,
+.team-two-rounds div {
+  background-color: #ddd;
+  border: 1px solid #00FF00;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+
+font-size: 1rem;
+font-weight: bold;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.round-score {
+
+font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.teams {
+
+    border-radius: 10px
+
+}
+
